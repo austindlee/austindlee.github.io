@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Austin Lee</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel|Play" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Source+Code+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+	</head>
+
+
+	<body>
+	<script type="text/javascript" src="javascript.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+	<script>
+	var increment = 0;
+	var set;
+	setInterval(function(){
+			increment += 1;
+			$("#carousel").css({
+				'-webkit-transform': 'rotateX(' + (increment * -60) + 'deg)'
+			});
+			set = (increment%6)+1;
+			$("#carousel").attr("data-state",set);
+		},2000);
+	$(window).scroll(function() {
+	  $(".slideanim").each(function(){
+		  var pos = $(this).offset().top;
+		  var winTop = $(window).scrollTop();
+		  if (pos < winTop + 600) {
+	      $(this).addClass("slide");
+	    }
+	  });
+	});
+	</script>
+
+	<div id="navBar">
+		<h3>Developer // Thinker // Austin Lee</h3>
+		<input type="checkbox" class="check" id="checked">
+		<label class="menu-btn" for="checked">
+			<span class="bar top"></span>
+			<span class="bar middle"></span>
+			<span class="bar bottom"></span>
+			<span class="menu-btn__text"></span>
+		</label>
+		<label class="close-menu" for="checked"></label>
+		<nav class="drawer-menu">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#about-me">About</a></li>
+				<li><a href="#involvement">Involvement</a></li>
+				<li><a href="Resume Austin Lee 2016.pdf" target="_blank">Resume</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<div id="home">
+		<a name="home-page"></a>
+		<div class="bg"></div>
+		<div class="jumbotron">
+			<div class="container">
+				<div class="col-lg-7">
+					<h1> I am known as a </h1>
+				</div>
+				<div class="col-lg-5">
+				<div id="carousel-wrapper">
+					<div id="carousel" data-state="1" style="-webkit-transform: rotateX(0deg)">
+						<figure>Web Developer</figure>
+						<figure>Creator</figure>
+						<figure>Singer</figure>
+						<figure>Mobile Developer</figure>
+						<figure>Musician</figure>
+						<figure>UCLA Student</figure>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<a name="about-me"></a>
+	<div class="aboutmesection">
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4 aboutMe">
+					<h2>About Me</h2>
+					<img src="headshot.jpg" class="img-circle img-responsive">
+					<p>I am an aspiring software developer from San Jose, California. My love for software development
+					first started in a dimly-lit and dusty CS classroom. I began with the language of Java; little did I know that that 12-year-old computer would
+					change my life with simple a message:</p>
+					<div class="hello slideanim">
+					<p>Hello World</p>
+					</div>
+					<p>I am currently pursuing a B.S. in Computer Science and am
+					exploring the depth and breadth of the multi-faceted field of computer science.</p>
+				</div>
+				<div class="col-lg-4"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-4">
+						<div class="skillset">
+							<div class="skill-lockup slideanim">
+								<span class="skill-name">Communication</span>
+								<span class="skill-status">Advanced</span>
+								<span class="skill-bar">
+									<span class="skill-level  communication"></span>
+								</span>
+							</div>
+							<br><br><br><br>
+							<div class="skill-lockup slideanim">
+								<span class="skill-name">Leadership</span>
+								<span class="skill-status">Proficient</span>
+								<span class="skill-bar">
+									<span class="skill-level  leadership"></span>
+								</span>
+							</div>
+							<br><br><br><br>
+							<div class="skill-lockup slideanim">
+								<span class="skill-name">Learning</span>
+								<span class="skill-status">Expert</span>
+								<span class="skill-bar">
+									<span class="skill-level  learning"></span>
+								</span>
+							</div>
+							<br><br><br><br>
+							<div class="skill-lockup slideanim">
+								<span class="skill-name">Teamwork</span>
+								<span class="skill-status">Advanced</span>
+								<span class="skill-bar">
+									<span class="skill-level  teamwork"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="skillset">
+							<div class="skill-lockup slideanim">
+								<span class="skill-name">Web Development</span>
+								<span class="skill-status">Advanced</span>
+								<span class="skill-bar">
+									<span class="skill-level  webdev"></span>
+								</span>
+							</div>
+							<br><br><br><br>
+							<div class="skill-lockup slideanim">
+								<span class="skill-name">Mobile Development</span>
+								<span class="skill-status">Advanced</span>
+								<span class="skill-bar">
+									<span class="skill-level  mobdev"></span>
+								</span>
+							</div>
+							<br><br><br><br>
+							<div class="skill-lockup slideanim">
+								<span class="skill-name">Programming</span>
+								<span class="skill-status">Advanced</span>
+								<span class="skill-bar">
+									<span class="skill-level  programming"></span>
+								</span>
+							</div>
+							<br><br><br><br>
+							<div class="skill-lockup slideanim">
+								<span class="skill-name">Visual Design</span>
+								<span class="skill-status">Intermediate</span>
+								<span class="skill-bar">
+									<span class="skill-level  visual-design"></span>
+								</span>
+							</div>
+							<br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="codingPhilosection">
+	<div class="container-fluid text-center">
+		<h2>Coding Philosophy</h2>
+		<br>
+		<div class="row">
+			<div class="philoPhrase">
+			<div class="col-lg-4">
+				<p>I value the</p>
+				<br>
+				<div class="keywords slideanim">
+					<span class="glyphicon glyphicon-erase"></span>
+					<p> Cleanliness</p>
+				</div>
+				<p>of my code</p>
+			</div>
+			</div>
+			<div class="philoPhrase">
+			<div class="col-lg-4">
+				<p>I value the</p>
+				<br>
+				<div class="keywords slideanim">
+					<span class="glyphicon glyphicon-eye-open	logo-large"></span>
+					<p> Readibility</p>
+				</div>
+				<p>of my code</p>
+			</div>
+			</div>
+			<div class="philoPhrase">
+			<div class="col-lg-4">
+				<p>I value the</p>
+				<br>
+				<div class="keywords slideanim">
+					<span class="glyphicon glyphicon-hourglass logo-large"></span>
+					<p> Efficiency</p>
+				</div>
+				<p>of my code</p>
+			</div>
+		</div>
+		</div>
+
+	</div>
+	</div>
+	<a name="involvement"></a>
+	<div class="involvementsection">
+		<h2>Involvement</h2>
+		<ul id="hexGrid">
+		  <li class="hex">
+		    <a class="hexIn">
+		      <img src="Medleys-min.jpg"/>
+		      <h1>Medleys A Capella</h1>
+		      <p>I am soloist, arranger, and web developer for UCLA's premier community service A Capella group.</p>
+		    </a>
+		  </li>
+			<li class="hex">
+				<a class="hexIn">
+					<img src="UCLALibrary.jpg"/>
+					<h1>BuildUCLA</h1>
+					<p>I am a mobile developer for the UCLA Library and have a published app, Bruin Library, on the play store. </p>
+				</a>
+			</li>
+			<li class="hex">
+				<a class="hexIn">
+		      <img src="UCLA-min.jpg"/>
+		      <h1>UCLA Student</h1>
+		      <p>I am currently pursuing a B.S. in Computer Science at UCLA with a G.P.A. of 3.64.</p>
+		    </a>
+		  </li>
+		  <li class="hex">
+				<a class="hexIn">
+		      <img src="Guitar-min.jpg"/>
+		      <h1>Musical Performance</h1>
+		      <p>I play and perform piano, flute, and guitar in talent shows, street performances, hospitals, women's shelters, etc.</p>
+		    </a>
+		  </li>
+		  <li class="hex">
+				<a class="hexIn">
+		      <img src="WebDev-min.jpg"/>
+		      <h1>Web Development</h1>
+		      <p>I am currently exploring the world of web development by learning jQuery, Bootstrap, etc.</p>
+		    </a>
+		  </li>
+		</ul>
+	</div>
+<a name="contact"></a>
+<div class="contactsection">
+	<div class="container">
+	  <h2 class="text-center">Contact</h2>
+	  <div class="row">
+		<div class="contactDesc">
+	    <div class="col-lg-4">
+	      <p>Let's work together!</p><br>
+	      <p><span class="glyphicon glyphicon-map-marker"></span>  San Jose  |  Los Angeles</p>
+				<br>
+				<p><span class="glyphicon glyphicon-phone"></span> +1(408) 930-7880</p>
+	      <p><span class="glyphicon glyphicon-envelope"></span>  Email: austindlee997@gmail.com</p>
+	    </div>
+		</div>
+			<form action="MAILTO:austindlee997@gmail.com" method="post" enctype="text/plain">
+	    <div class="col-lg-8">
+	      <div class="row">
+	        <div class="col-lg-6 form-group">
+	          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+	        </div>
+	        <div class="col-lg-6 form-group">
+	          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+	        </div>
+	      </div>
+	      <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea>
+	      <div class="row">
+	        <div class="col-lg-12 form-group">
+	          <button class="btn" type="submit"><span>Send</span></button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	</div>
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6">
+					<br><br><br><br>
+					<ul>
+						<li><a href="https://www.instagram.com/austindeelee/" target='_blank'><img src="instagram.png"></a></li>
+						<li><a href="https://github.com/austindlee" target='_blank'><img src="github.png"></a></li>
+						<li><a href="https://www.linkedin.com/in/austin-lee-07" target='_blank'><img src="linkedin.png"></a></li>
+						<li><a href="https://www.facebook.com/austin.lee.79" target='_blank'><img src="facebook.png"></a></li>
+						<li><a href="Resume Austin Lee 2016.pdf" target="_blank"><img src="resume.png"></a></li>
+						<li><a href="mailto:austindlee997@gmail.com"><img src="email.png"></a></li>
+					</ul>
+				</div>
+				<div class="cp">
+				<div class="col-lg-6">
+					<p>&#169 Austin Lee 2017</p>
+					<br>
+					<p>All Rights Reserved.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
