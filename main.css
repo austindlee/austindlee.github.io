@@ -119,7 +119,7 @@ body, html {
 	position: relative;
 	width:100%;
 	height:100vh;
-	background: url("sftree-min2.jpg");
+	background: url("sftree.jpg");
 	background-size: cover;
 	overflow: hidden;
 	text-align: left;
@@ -962,7 +962,7 @@ ul {
 .footer{
 	width:100%;
 	height:30vh;
-	background: url("sftree-min2.jpg");
+	background: url("sftree.jpg");
 	background-size: cover;
 	overflow: hidden;
 	color:white;
