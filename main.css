@@ -277,48 +277,48 @@ h3{
 #carousel figure:nth-of-type(1) {
   -webkit-transform: rotateX(0deg) translateZ(100px);
   font-family: 'orbitron';
-  font-size: 4vw;
-  padding-top: 1.5%;
+  font-size: 52px;
 }
 
 /* creator */
 #carousel figure:nth-of-type(2) {
   -webkit-transform: rotateX(60deg) translateZ(100px);
   font-family: 'indie flower';
-  font-size: 5vw;
-  padding-bottom: 24.5%;
+  font-size: 63px;
+  padding-bottom: 29%;
 }
 
 /* singer */
 #carousel figure:nth-of-type(3) {
   -webkit-transform: rotateX(120deg) translateZ(100px);
   font-family: 'lobster two';
-  font-size: 4.5vw;
-  padding-bottom: 23%;
+  font-size: 59px;
+  padding-bottom: 25%;
 }
 
 /* mobile developer */
 #carousel figure:nth-of-type(4) {
   -webkit-transform: rotateX(180deg) translateZ(100px);
   font-family: 'source code pro';
-  font-size: 4.4vw;
+  font-size: 54px;
   letter-spacing: -.09em;
-  padding-bottom: 22%;
+  padding-bottom: 23%;
 }
 
 /* musician */
 #carousel figure:nth-of-type(5) {
   -webkit-transform: rotateX(240deg) translateZ(100px);
   font-family: 'aref ruqaa';
-  font-size: 4.4vw;
-  padding-bottom: 24%;
+  font-size: 55px;
+  padding-bottom: 26%;
 }
 
 /* UCLA Student */
 #carousel figure:nth-of-type(6) {
   -webkit-transform: rotateX(300deg) translateZ(100px);
   font-family: 'cinzel';
-  font-size: 4.5vw;
+  font-size: 55px;
+  padding-bottom: 26%;
 
 }
 
@@ -397,7 +397,9 @@ h3{
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.jumbotron h1 {
+  font-size: 60px;
+}
 @media only screen and (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
