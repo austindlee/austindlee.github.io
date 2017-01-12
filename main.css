@@ -277,15 +277,15 @@ h3{
 #carousel figure:nth-of-type(1) {
   -webkit-transform: rotateX(0deg) translateZ(100px);
   font-family: 'orbitron';
-  font-size: 8.5vh;
-  padding-top: .6%;
+  font-size: 4vw;
+  padding-top: 1.5%;
 }
 
 /* creator */
 #carousel figure:nth-of-type(2) {
   -webkit-transform: rotateX(60deg) translateZ(100px);
   font-family: 'indie flower';
-  font-size: 10.5vh;
+  font-size: 5vw;
   padding-bottom: 24.5%;
 }
 
@@ -293,15 +293,15 @@ h3{
 #carousel figure:nth-of-type(3) {
   -webkit-transform: rotateX(120deg) translateZ(100px);
   font-family: 'lobster two';
-  font-size: 10vh;
-  padding-bottom: 23.5%;
+  font-size: 4.5vw;
+  padding-bottom: 23%;
 }
 
 /* mobile developer */
 #carousel figure:nth-of-type(4) {
   -webkit-transform: rotateX(180deg) translateZ(100px);
   font-family: 'source code pro';
-  font-size: 8.5vh;
+  font-size: 4.4vw;
   letter-spacing: -.09em;
   padding-bottom: 22%;
 }
@@ -310,15 +310,15 @@ h3{
 #carousel figure:nth-of-type(5) {
   -webkit-transform: rotateX(240deg) translateZ(100px);
   font-family: 'aref ruqaa';
-  font-size: 9.5vh;
-  padding-bottom: 25%;
+  font-size: 4.4vw;
+  padding-bottom: 24%;
 }
 
 /* UCLA Student */
 #carousel figure:nth-of-type(6) {
   -webkit-transform: rotateX(300deg) translateZ(100px);
   font-family: 'cinzel';
-  font-size: 9vh;
+  font-size: 4.5vw;
 
 }
 
