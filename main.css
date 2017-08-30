@@ -725,7 +725,7 @@ h3{
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.65);
   color: white;
-  transition: transform .15s ease-in, opacity .15s ease-in;
+  transition: transform .1s ease-in, opacity .1s ease-in;
 }
 
 .hex h1 {
